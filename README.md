@@ -60,6 +60,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-desktop.ps
 # 装完手动重启 DSH Desktop
 ```
 
+> 如果本机 HTTPS 连 GitHub 不稳（代理 / 网络拦截），可以改用 SSH：
+> `git clone git@github.com:Landau1994/dsh-yinji.git`。
+
 安装脚本会：
 
 1. 定位 DSH 自带 CLI（PATH、常见安装路径；找不到时用 `-Dsh <dsh.cmd 路径>` 指定）；
