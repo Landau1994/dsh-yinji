@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="隐几">
+  <rect width="256" height="256" rx="52" fill="#F7F2E8"/>
+  <path d="M56 80h48l16 18h80a10 10 0 0 1 10 10v76a10 10 0 0 1-10 10H56a10 10 0 0 1-10-10V90a10 10 0 0 1 10-10z"
+        fill="none" stroke="#2B2B2B" stroke-width="8" stroke-linejoin="round"/>
+  <g stroke="#2B2B2B" stroke-width="7" stroke-linecap="round" opacity="0.55">
+    <path d="M76 122h104"/>
+    <path d="M76 146h56"/>
+    <path d="M76 170h88"/>
+  </g>
+  <path d="M150 138l48 48" stroke="#B5432A" stroke-width="10" stroke-linecap="round"/>
+  <path d="M156 176l36-28" stroke="#B5432A" stroke-width="10" stroke-linecap="round"/>
+</svg>

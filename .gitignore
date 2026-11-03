@@ -1,0 +1,15 @@
+# dsh-yinji 依赖与产物
+node_modules/
+*.log
+pnpm-debug.log*
+
+# 编辑器 / 系统文件
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 本地临时文件
+*.local
+tmp/

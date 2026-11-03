@@ -1,0 +1,18 @@
+# dsh-yinji — bundle patch
+#
+# 这是插件的「挂载声明」。DSH 启动时按 bundle 层栈叠加各插件的 patch，
+# 本文件把 dsh-yinji 行插入当前 profile 的配置树。
+#
+# 安装（桌面版 profile 名为 desktop），在仓库根目录运行：
+#   powershell -NoProfile -ExecutionPolicy Bypass -File scripts\install-desktop.ps1
+#
+# 或者手动：
+#   dsh plugin --profile desktop add <本仓库目录>
+#   再把 "dsh-yinji" 加进 profile 的 dsh.profile.bundles，重启 DSH。
+#
+# 本插件没有宿主配置项：隐藏名单按工作区存在浏览器 localStorage 里，
+# 只在左侧工作区列表和右侧「文件」标签页上生效，不影响模型对文件的访问。
+
+- insert:
+    - id: dsh-yinji
+      name: dsh-yinji

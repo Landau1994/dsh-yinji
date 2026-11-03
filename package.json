@@ -1,0 +1,63 @@
+{
+  "name": "dsh-yinji",
+  "version": "0.2.0",
+  "description": "隐几 — 在 DSH 左侧栏隐去选中的工作区，并在右侧文件树里隐去不想看的目录与文件（纯界面隐藏，不影响模型访问）。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "sidebar",
+    "workspace",
+    "file-tree",
+    "hide",
+    "yinji"
+  ],
+  "license": "MIT",
+  "author": "Landau1994",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Landau1994/dsh-yinji.git"
+  },
+  "homepage": "https://github.com/Landau1994/dsh-yinji#readme",
+  "bugs": {
+    "url": "https://github.com/Landau1994/dsh-yinji/issues"
+  },
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "assets",
+    "cordis.patch.yml",
+    "scripts",
+    "README.md"
+  ],
+  "icon": "./assets/icon.svg",
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  },
+  "meta": {
+    "title": "隐几",
+    "description": "在左侧栏隐藏选中的工作区，在右侧文件树隐藏选中的目录与文件；只影响界面，不影响模型访问。"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
